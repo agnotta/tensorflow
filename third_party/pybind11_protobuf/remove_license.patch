@@ -11,3 +11,12 @@ index b62eb91..b7d1240 100644
  pybind_library(
      name = "enum_type_caster",
      hdrs = ["enum_type_caster.h"],
+@@ -40,7 +38,7 @@ bool_flag(
+ config_setting(
+     name = "enable_pyproto_api_setting",
+     flag_values = {
+-        ":enable_pyproto_api": "True",
++        ":enable_pyproto_api": "False",
+     },
+     visibility = ["//visibility:private"],
+ )
